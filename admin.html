@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Nicola Hunziker, Dirk Hofstetter">
+    <link rel="stylesheet" type="text/css" href="js/jScrollPane/jScrollPane.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="icon" href="img/ico/greenchat.ico">
+    <title>Green Chat</title>
+  </head>
+
+  <body>
+    <div class="loader"></div>
+    <header>
+      <div id="chatTopBar"></div>
+    </header>
+
+    <div id="frame">
+      <div id="chatContainer">
+
+        <div id="userLineHolder">
+          <table id="userTable"></table>
+        </div>
+
+        <div id="chatBottomBar">
+          <div class="tip"></div>
+        </div>
+
+      </div>
+    </div>
+    <footer>&copy;WebTec HS18 - Nicola Hunziker, Dirk Hofstetter</footer>
+
+    <script src="js/jquery-1.4.2.min.js"></script>
+    <script>
+      $(window).load(function() {
+        $(".loader").fadeOut("slow");
+      })
+    </script>
+    <script src="js/jScrollPane/jquery.mousewheel.js"></script>
+    <script src="js/jScrollPane/jScrollPane.min.js"></script>
+    <script src="js/admin.js"></script>
+  </body>
+
+</html>

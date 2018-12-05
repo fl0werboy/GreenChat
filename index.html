@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Nicola Hunziker, Dirk Hofstetter">
+    <link rel="stylesheet" type="text/css" href="js/jScrollPane/jScrollPane.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="icon" href="img/ico/greenchat.ico">
+    <title>Green Chat</title>
+  </head>
+
+  <body>
+    <div class="loader"></div>
+    <header>
+      <div id="chatTopBar"></div>
+      <div id="forms">
+        <form id="loginForm" method="post" action="">
+          <input type="text" id="name" name="name" maxlength="16" placeholder="Username" autocomplete="off" />
+          <input type="password" id="password" name="password" placeholder="Password" />
+          <input type="submit" class="blueButton" value="Login" />
+        </form>
+
+        <form id="registerForm" method="post" action="">
+          <hr style="margin: 10px;">
+          <input type="text" id="register_name" name="name" maxlength="16" placeholder="Username" autocomplete="off" />
+          <input type="email" id="register_email" name="email" placeholder="E-Mail" autocomplete="off" />
+          <input type="password" id="register_password" name="password" placeholder="Password" />
+          <input type="password" id="register_confirmPassword" name="confirmPassword" placeholder="Confirm Password" />
+          <input type="submit" class="blueButton" value="Register" />
+        </form>
+      </div>
+    </header>
+
+    <div id="frame">
+
+      <div id="userPane">
+        <div id="chatUsers"></div>
+      </div>
+
+      <div id="chatContainer">
+
+        <div id="chatLineHolder"></div>
+
+        <div id="chatBottomBar">
+
+          <form id="submitForm" method="post" action="">
+            <div id="spacer_left"></div>
+            <input id="chatText" name="chatText" maxlength="255" autocomplete="off" />
+            <div id="spacer_center"></div>
+            <button type="submit" class="sendButton">
+              <img src="img/send.svg" width="30" height="30" alt="send" onmouseover="this.src='img/send_pushed.svg';" onmouseout="this.src='img/send.svg';" />
+            </button>
+            <div id="spacer_right"></div>
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <footer>&copy;WebTec HS18 - Nicola Hunziker, Dirk Hofstetter</footer>
+
+    <script src="js/jquery-1.4.2.min.js"></script>
+    <script>
+      $(window).load(function() {
+        $(".loader").fadeOut("slow");
+      })
+    </script>
+    <script src="js/jScrollPane/jquery.mousewheel.js"></script>
+    <script src="js/jScrollPane/jScrollPane.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+
+</html>
